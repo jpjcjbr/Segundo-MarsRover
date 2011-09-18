@@ -1,0 +1,35 @@
+Solution Explanation
+======================================
+The Main class reads the input file and then call the Launcher to start the process.
+The Launcher deploys Rovers in a specified Plateau.
+When Launcher method startRover is called, all the rovers are put to work.
+Launcher discovers which RoverOperation will be executed based on operations set in rover.
+After all rover finished their execution, a object implementing ResultPrinter interface will be called to show the results.
+
+Methodology
+======================================
+The problem was solved using TDD.
+The unit tests are located in the folder test under the resolution folder.
+The class MarsRoverSuite is the Suite to execute all tests.
+JUnit was used to create and run the tests.
+======================================
+
+Project
+======================================
+The project was developed using Eclipse, and can be opened in it.
+======================================
+
+Distribution
+======================================
+To generate a new jar just run the ant task named create_run_jar in the build.xml located under
+the resolution folder.
+The generated jar will be placed under the dist folder.
+======================================
+
+Running
+======================================
+To run the solution you have to generate a jar using the ant task create_run_jar and execute the 
+jar, Ex.: java -jar MarsRovers.jar name_of_the_input_file
+The input file must be in the same folder of the MarsRovers.jar
+The output will be display in the console output
+======================================
